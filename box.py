@@ -80,7 +80,7 @@ async def on_message(message):
                                         "Invalid input, addition error"
                                     )
                               elif int(c[1]) not in N and int(c[2]) not in N:
-                                if int(c[1]) in range (1,10) and int(c[2]) in range (0, 10):
+                                if int(c[1]) in range (1,10) and int(c[2]) in range (1, 10):
                                     await roll.channel.send(
                                         "Invalid input, both numbers already closed")
                                 else:
@@ -88,7 +88,7 @@ async def on_message(message):
                                         "Invalid input, invalid number"
                                     )
                               else:
-                                if int(c[1]) in range (0,10) and int(c[2]) in range (0,10):
+                                if int(c[1]) in range (1,10) and int(c[2]) in range (1,10):
                                     await roll.channel.send(
                                         "Invalid input, one number already closed")
                                 else:
@@ -107,7 +107,7 @@ async def on_message(message):
 
                                     validClose = True
                                     break
-                                elif int(c[1]) in range(0,10):
+                                elif int(c[1]) in range(1,10):
                                     await roll.channel.send(
                                         "Invalid input, number already closed"
                                     )
