@@ -118,7 +118,6 @@ async def on_message(message):
                               else:  await roll.channel.send(
                                         "Invalid input, addition error"
                                     )
-                           
                         except:
                             await roll.channel.send(
                                 "Invalid input"
